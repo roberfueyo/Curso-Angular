@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Super Web</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/super.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+	<header class="cabecera">
+    <a href="index.html" class="logo">Super web</a>
+    <div class="buscador">
+ 				<input type="text" name="Buscar" placeholder="Buscar" class="input-buscador">
+ 				<button type="button"><i class="lupa"></i></button>
+    </div>
+		<nav>
+			<ul class="listaHeader">
+				<li><a href="#">Noticias</a></li>
+				<li><a href="#">Opinión</a></li>
+				<li><a href="#">Formación</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+		<div id="contenedor-formulario">
+				<form class="formulario" action="index.html" method="post">
+					<h1>Formulario de contacto</h1>
+					<fieldset>
+						<legend>Datos personales</legend>
+							<div class="flex-column">
+										<p>
+											<label for="Nombre">Nombre:</label>
+											<input type="text" name="Nombre" id="Nombre">
+										</p>
+										<p>
+											<label for="Apellidos">Apellidos:</label>
+											<input type="text" name="Apellidos" id="Apellidos">
+										</p>
+										<p>
+											<label for="Direccion">Dirección:</label>
+											<input type="text" name="Direccion" id="Direccion">
+										</p>
+										<p>
+											<label for="Telefono">Teléfono:</label>
+											<input type="text" name="Telefono" id="Telefono">
+										</p>
+										<p>
+											<label for="Email">E-mail:</label>
+											<input type="text" name="Email" id="Email">
+										</p>
+								</div>
+				</fieldset>
+
+				<hr class="separador-formulario">
+
+				<fieldset>
+					<legend>Aficiones</legend>
+					<div class="flex-row">
+						<div class="flex-column-checkbox">
+									<p>Grupo de checkbox</p>
+									<p>
+										<label for="checkbox1">checkbox 1:</label>
+										<input type="checkbox" name="checkbox1" id="checkbox1">
+									</p>
+									<p>
+										<label for="checkbox2">checkbox 2:</label>
+										<input type="checkbox" name="checkbox2" id="checkbox2">
+									</p>
+									<p>
+										<label for="checkbox3">checkbox 3:</label>
+										<input type="checkbox" name="checkbox3" id="checkbox3">
+									</p>
+							</div>
+
+							<div class="flex-column-radiobutton">
+										<p>Grupo de radiobutton</p>
+										<p>
+											<label for="radio1">Radiobutton 1:</label>
+											<input type="radio" name="radio1" id="radio1">
+										</p>
+										<p>
+											<label for="radio2">Radiobutton 2:</label>
+											<input type="radio" name="radio2" id="radio2">
+										</p>
+										<p>
+											<label for="radio3">Radiobutton 3:</label>
+											<input type="radio" name="radio3" id="radio3">
+										</p>
+								</div>
+							</div>
+							<div class="flex-row">
+								<label for="opciones1">Opciones</label>
+								<select class="select" name="opciones1" id="opciones1">
+
+								</select>
+								<label for="opciones2">Opciones</label>
+								<select class="select" name="opciones2" id="opciones2">
+
+								</select>
+							</div>
+							<hr class="separador-formulario">
+			</fieldset>
+
+			<fieldset>
+				<p>Comentarios</p>
+				<textarea name="name" rows="8" cols="80"></textarea>
+			</fieldset>
+
+			<input type="submit" value="Enviar" class="boton">
+			</form>
+		</div>
+
+
+
+
+
+
+	<footer id="footer">
+		<div class="footer-copyright">
+			<p>Super web es una marca registrada de Super Web Enterprise, Wisconsin, Alabama</p>
+			<p>Super Web. Calle Jon, 23, 90210, Valdecardos de Arriba</p>
+			<p>@Roberto 2019</p>
+		</div>
+		<div class="footer-redes-sociales">
+			<nav>
+				<ul>
+					<li><a href="#">Mapa web</a></li>
+					<li><a href="#">Información legal</a></li>
+					<li><a href="#">Política de cookies</a></li>
+				</ul>
+			</nav>
+			<div class="footer-redes-sociales-icons">
+				<ul>
+					<li><a href="#" class="icon-facebook"></a></li>
+					<li><a href="#" class="icon-twitter"></a></li>
+					<li><a href="#" class="icon-pinterest"></a></li>
+					<li><a href="#" class="icon-google"></a></li>
+				</ul>
+
+			</div>
+
+		</div>
+		</footer>
+
+</body>
+
+</html>
