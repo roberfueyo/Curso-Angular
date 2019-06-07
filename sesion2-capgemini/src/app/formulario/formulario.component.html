@@ -1,0 +1,26 @@
+<form class="row mt-5" (ngSubmit)="f.form.valid && anadirAcciones()" #f="ngForm">
+    <div class="form-group col-sm-1">
+      
+        <select (change)="setTipoAccion($event)" id="inputEstado" class="form-control">
+          <option value="ingresoAccion" selected>+</option>
+          <option value="egresoAccion">-</option>
+        </select>
+      </div>
+    <div class="form-group col-sm-6">
+      <input [ngClass]="{'red-focus': tipoAccion === 'egresoAccion'}"
+      type="text" class="form-control" id="inputDescripcion" placeholder="Agregar Descripción"
+      [(ngModel)]="inputDescripcion" required name="inputDescripcion">
+    </div>
+    <div class="form-group col-sm-2">
+        <input [ngClass]="{'red-focus': tipoAccion === 'egresoAccion'}"
+         type="number" class="form-control" id="inputValor" placeholder="Valor"
+        [(ngModel)]="inputValor" required name="inputValor">
+        
+      </div>
+
+    <div class="form-group col-sm-1" style="text-align: center;">
+      <button  [ngClass]="{'red-boton': tipoAccion === 'egresoAccion'}"  type="submit" class="form-control cyan-boton" 
+      ><i class="fa fa-check-circle-o fa-lg"></i></button>
+    </div>
+
+</form>

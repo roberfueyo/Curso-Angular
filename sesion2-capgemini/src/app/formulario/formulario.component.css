@@ -1,0 +1,11 @@
+.red-focus:focus{
+    border: 1px solid #f16f5c;
+}
+
+.red-boton{
+    background-color: #f16f5c !important;
+}
+
+.cyan-boton{
+    background-color: cyan;
+}

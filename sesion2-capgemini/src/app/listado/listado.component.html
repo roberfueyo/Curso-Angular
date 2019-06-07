@@ -1,0 +1,26 @@
+<div class="row mt-5">
+    <div class="col-sm">
+        <h3 class="text-center cyan">Ingresos</h3>
+        <ul>
+            <li *ngFor="let elemento of ingresos">
+                <span>{{elemento.descripcion}}</span>
+                <span class="cyan" style="display:block;float: right;">{{elemento.valor | currency:'EUR':'€':'1.2-2'}} 
+                    <button class="btn-show" (click)="eliminarIngreso(elemento)">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i></button></span>
+              </li>
+        </ul>
+    </div>
+
+    <div class="col-sm">
+        <h3 class="text-center red">Egresos</h3>
+        <ul>
+            <li *ngFor="let elemento of egresos; index">  
+                <span>{{elemento.descripcion}}</span>
+                <span class="red" style="display:block;float: right;">{{elemento.valor | currency:'EUR':'€':'1.2-2'}} <i class="porcentaje black">{{calcularPorcentaje(elemento) | percent}}</i>
+                    <button class="btn-show" (click)="eliminarEgreso(elemento)">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i></button></span>
+               
+            </li>
+        </ul>
+    </div>
+</div>

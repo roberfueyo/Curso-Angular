@@ -1,0 +1,22 @@
+.alert-position{
+    margin-top: 20px;
+}
+
+h3{
+    color: white;
+}
+
+span{
+    float: right;
+}
+.porcentaje{
+    border: 1px solid #ecf0f1;
+    background: #f16f5c;
+    padding: 2px;
+    font-size: 0.7em;
+}
+
+.presupuesto{
+    color: white;
+
+}

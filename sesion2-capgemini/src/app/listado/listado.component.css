@@ -1,0 +1,45 @@
+header{
+    background: #D8786B;
+    height: 300px;
+    position: relative;
+}
+li{
+    border: 1px solid #808080;
+    border-radius: 6px;
+    list-style-type:none;
+    margin: 2px;
+    padding: 10px;
+}
+li:hover{
+    background-color: #ecf0f1;
+}
+ul{
+    /*border: 1px solid red;*/
+}
+
+
+.btn-show{
+    border: none;
+    background-color: white;
+}
+.btn-show:hover{
+    background-color: #ecf0f1;
+}
+.porcentaje{
+    border: 1px solid #ecf0f1;
+    background: #f16f5c;
+    padding: 2px;
+    font-size: 0.7em;
+}
+
+.red{
+    color: #f16f5c !important;
+}
+
+.cyan{
+    color: cyan;
+}
+
+.black{
+    color: black;
+}

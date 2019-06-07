@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <h3>Presupuesto disponible:</h3>
+    </div>
+    <div class="row justify-content-center">
+            <h1 class="presupuesto">{{presupuestoDisponible | currency:'EUR':'€':'1.2-2'}}</h1>
+        </div>
+    <div class="row justify-content-center mt-5">
+        <div class="alert alert-primary w-25" role="alert">
+            <span class="float-left">INGRESOS</span> <span class="float-right">{{ingresosTotal | currency:'EUR':'€':'1.2-2'}}</span>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+            <div class="alert alert-danger w-25" role="alert">
+                <span class="float-left">EGRESOS</span> <span class="float-right">{{egresosTotal | currency:'EUR':'€':'1.2-2'}} <i class="porcentaje">{{calcularPorcentaje() | percent}}</i></span>
+            </div>
+    </div>
+      
+</div>
